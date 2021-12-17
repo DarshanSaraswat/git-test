@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-size: arial,helvetica,sans-serif;
+        }
+        .nav{
+            width:auto;
+            height:89px;
+            background-color:#0C3C60;
+            margin-top: 0;
+            position:relative;
+        }
+        .parallax{
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 500px; 
+        }
+        .title{
+             display: inline-block;
+             font-size: 25px;
+             color: white;
+             font-family: raleway, sans-serif;
+             margin-left: 180px;
+             margin-top: 39px;
+             font-variant-ligatures: normal;
+             font-variant-caps: normal;
+             font-variant-numeric: normal;
+             font-variant-east-asian: normal;
+             font-weight: normal;
+             font-stretch: normal;
+             cursor: pointer;
+        } 
+        .title1{
+             display: inline-block;
+             font-size: 25px;
+             color:#7DCADA;
+             font-family: raleway, sans-serif;
+             margin-top: 39;
+             font-style: normal;
+             font-variant-ligatures: normal;
+             font-variant-caps: normal;
+             font-variant-numeric: normal;
+             font-variant-east-asian: normal;
+             font-weight: normal;
+             font-stretch: normal;
+             cursor: pointer;
+        }
+        .a{
+            margin-left: 110px;
+        }
+        .a,.b,.c,.d,.e,.f{
+                margin-right:50px;
+                color: white;
+                font-family: raleway, sans-serif;
+                font-size: 16px;
+               
+        }
+   
+        span:hover{
+            color:#6EA4CA;
+            cursor: pointer;
+        }
+        .f{
+            font-size: 16px;
+        }
+        img{
+            margin-top: 0px;
+            width:1349px;
+            height:567px;
+            margin-bottom: 65px;
+          
+        }
+        .box{
+            width:1349px;
+            height:180px;
+            position: absolute;
+            bottom: 5px;
+            right: 0px;
+            margin:auto 0 0 0;
+            background-color: white; 
+            color: white;
+            padding-left: 40px;
+            padding-right: 20px;
+            opacity:.6;
+        }
+        .develop{
+            color:#0C3C60;
+            font-size: 19px;
+            display: inline-block;
+            margin-top: 45px;
+            margin-left: 530px;
+            font-family: raleway, sans-serif;
+            cursor: default;
+        }
+        .growth{
+            color:#0C3C60;
+            font-size: 70px;
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 360px;
+            font-family: raleway, sans-serif;
+            cursor: none;
+        }
+        .part1,.part2,.part3{
+       background-color: #0C3C60;
+       
+       box-sizing: border-box;
+       padding: 25px ;
+       margin: 1px 0px 3px 0;
+       font-size: 120%;
+        background-position: top right;
+        float: left;
+        clear:right;
+        width:22.5%;
+        margin-left: 37px;
+        margin-right:0px;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 24px;
+    }
+    .part1{
+        margin-left:195px;
+    }
+    .part1>div,.part2>div,.part3>div{
+       text-align: center;
+       position:top-right;
+       margin-left: 80px;
+       font-size:140%;
+       width:27%;
+       text-align: center;
+       color: #D1E0EB;
+    }
+   p{
+       text-align: center;
+       font-size: 15px;
+   }
+   button{
+    background-color: rgba(57, 114, 155, 1);
+    border: solid rgba(30, 171, 199, 1) 0px;
+    cursor: pointer !important;
+    margin-left:60px;
+    margin-top: 18px;
+    width: 140px;
+    height:40px;
+    color: white;
+    font-size: 18px;
+   }
+   button:hover{
+       background-color: white;
+       color:#0C3C60;
+   }
+   .middle{
+       width: auto;
+       height:480px;
+       background-color:#D1E0EB;
+       margin-top: 415px;
+   }
+   .middle1{
+    font-weight:100;
+    font-size: 65px;
+    color:rgb(12, 60, 96);
+    font-family:raleway, sans-serif;
+    display: inline-block;
+    margin-left: 500px;
+    margin-top: 75px;
+    line-height: 1.2e;
+   }
+   p.middle2{
+       margin-top:45px;
+       text-align: center;
+       font-size:16px;
+       width:750px;
+       margin-left: 300px;
+       letter-spacing: normal;
+       color:rgba(57, 114, 155, 1);
+       font-family: Arial, Helvetica, sans-serif;
+   }
+   p.middle2{
+       margin-top:25px;
+       text-align: center;
+       font-size:16px;
+       width:750px;
+       margin-left: 300px;
+       letter-spacing: normal;
+       color:rgba(57, 114, 155, 1);
+       font-family: Arial, Helvetica, sans-serif;
+   }
+    button.read{
+       font-size:18px;
+       background-color:#0C3C60;
+       margin-left: 600px;
+       width: 140px;
+       height:40px;
+    }
+    .read:hover{
+        background-color:rgba(57, 114, 155, 1); 
+        color:white;
+    }
+     .footer{
+        width: auto;
+       height:880px;
+       background-color:#0C3C60;
+     }
+     .footer1{
+       font-weight:100;
+       font-size: 65px;
+       color:white;
+       font-family:raleway, sans-serif ;
+       display: inline-block;
+       margin-left: 460px;
+       margin-top: 75px;
+       line-height: 1.2e;
+    }
+    div.map{
+        margin-left: 55px;
+        margin-top: 60px;
+        display: inline-block;
+        float: left;
+    }
+    .footer2{
+        display: inline-block;
+        margin-bottom:30px;
+        text-align: center;
+        color:white;
+        font-size: 18px;
+        font-family:raleway, sans-serif ;
+    }
+    .footer3{
+        width:400px;
+        float: left;
+        margin-top: 60px;
+        font-size: 16px;
+        color: white;
+        margin-left:30px ;
+    }
+     .footer4{
+          color: white;
+          margin-bottom: 800px;
+          font-family:raleway, sans-serif ;
+          margin-bottom: 5px;
+          font-size: 15px;
+          margin-left: 30px;
+     }
+     input{
+        margin-left: 30px;
+         font-family:raleway, sans-serif ;
+         margin-top: 8px;
+         margin-bottom: 5px;
+         width: 350px;
+         height:30px;
+         padding:1px 1px auto 5px;
+     }
+     .star{
+         color: yellow;
+     }
+     textarea{
+         width:350px;
+         height: 100px;
+         font-family:raleway, sans-serif ;
+         margin-left: 30px;
+         margin-top: 20px;
+     }
+     .end{
+         height: 33px;
+         margin-left: 245px;
+     }
+     .end2{
+         color: white;
+         font-size: 14px;
+         margin-top: 800px;
+     }
+     .part1:hover,.part2:hover,.part3:hover{
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.16), 0 2px 10px grey;
+     }
+    </style>
+</head>
+<body>
+    <div class="nav">
+         <div class="title">JAMES</div>
+         <div class="title1">CONSULTING</div>
+         <span class="a">About</span>
+         <span class="b">Services</span>
+         <span class="c">Projects</span>
+         <span class="d">Good To Know</span>
+         <span class="e">Contact</span>
+         <span class="f" style="color: #6EA4CA;">Log In</span>
+    </div>
+    <div class="container">
+       <div class="parallax"> <img src="download2.jpg" alt="Nature"></div>
+        <div class="box">
+          <span class="develop">DEVELOPING INNOVATIVE STRATEGIES</span><br>
+          <span class="growth">ACHIEVING GROWTH</span>
+        </div>
+    </div>
+    <div class="z">
+        <div class="part1">
+            <div>
+                Services
+            </div>
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+            </p>
+            <button>More Info</button>
+        </div>
+        <div class="part2">
+            <div>
+                Clients
+            </div>
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+            </p>
+            <button>More Info</button>
+        </div>
+        <div class="part3">
+            <div>
+                Projects
+            </div>
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+            </p>
+            <button>More Info</button>
+        </div>
+   </div>
+   <div class="middle">
+      <span class="middle1">ABOUT US</span>
+      <p class="middle2">
+        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about.
+      </p>
+      <p class="middle2">
+        This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. 
+      </p>
+      <button class="read">
+          Read More
+      </button>
+   </div>
+   <div class="footer">
+      <span class="footer1">CONTACT US</span>
+      <div class="map">
+          <div class="gmap_canvas">
+              <iframe width="450" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=chandigarh%20college%20of%20engineering%20and%20technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+            <a href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/">
+            </a>
+        </div>
+        <style>
+        .map{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
+        </style>
+       </div>
+     <div class="footer3">
+        <span class="footer2">500 Terry Francois Street, San Francisco, CA 94158 info@mysite.com  Tel: 123-456-7890</span>
+        <span class="footer4">Enter Your Name <span class="star">*</span></span><br>
+        <input type="text" placeholder="Name"><br>
+        <span class="footer4">Enter Your Email <span class="star">*</span></span><br>
+        <input type="text" placeholder="Enter Your Email"><br>
+        <span class="footer4">Enter Your Subject <span class="star">*</span> </span><br>
+        <input type="text" placeholder="Subject"><br>
+        <textarea placeholder="Type Your Message Here" style="resize: none;"></textarea>
+        <button class="end">Submit</button>
+     </div> 
+  </div>
+
+</body>
+</html>
+
